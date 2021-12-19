@@ -1,6 +1,6 @@
 # Getting Started Timekeepers
 
-This project is live on [Outdoors on Bike](https://time-keepers-new.web.app/home).
+This project is live on [Time-keepers](https://time-keepers-new.web.app/home).
 
 ## Available Services for Normal users
 
