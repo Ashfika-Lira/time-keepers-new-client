@@ -7,7 +7,7 @@ import Footer from '../../Footer/Footer';
 const AllProducts = () => {
    const [bikes, setBIkes] = useState([]);
    useEffect(() => {
-      fetch('https://outdoors-on-bike.herokuapp.com/bikes')
+      fetch('https://mighty-retreat-45944.herokuapp.com/products')
          .then(res => res.json())
          .then(data => setBIkes(data))
    }, [])
@@ -27,14 +27,14 @@ const AllProducts = () => {
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="https://media.zigcdn.com/media/model/2021/Aug/suzuki-hayabusa-2021-right-side-view_360x240.jpg"
+                        src="https://cdn.pixabay.com/photo/2015/06/25/17/21/smart-watch-821557__480.jpg"
                         alt="First slide"
                      />
                   </Carousel.Item>
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="https://s3-ap-south-1.amazonaws.com/bike-blog-content-dev/2021/05/ktm-duke-125-new.jpg"
+                        src="https://image.shutterstock.com/image-photo/luxury-watch-isolated-on-white-260nw-1233640588.jpg"
                         alt="Second slide"
                      />
                   </Carousel.Item>
@@ -43,14 +43,14 @@ const AllProducts = () => {
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="https://www.indiacarnews.com/wp-content/uploads/2020/12/Royal-Enfield-Electric-Bike-Rendering-.jpg"
+                        src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4LVwaqUtMFH3eIourzpcIGu50KXdLR_VrQjQdEcKO2o3hokJq2phWzIgoopQp&usqp=CAc"
                         alt="First slide"
                      />
                   </Carousel.Item>
                   <Carousel.Item>
                      <img
                         className="d-block w-100"
-                        src="https://static.autox.com/uploads/bikes/2021/08/indian-chief-bobber-dark-horse.jpg"
+                        src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="Second slide"
                      />
                   </Carousel.Item>

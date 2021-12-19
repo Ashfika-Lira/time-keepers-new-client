@@ -14,7 +14,7 @@ const MyOrders = () => {
 
    const email = user.email
    useEffect(() => {
-      fetch(`https://outdoors-on-bike.herokuapp.com/orders/${email}`, {
+      fetch(`https://mighty-retreat-45944.herokuapp.com/orders/${email}`, {
          method: 'POST'
       })
          .then(res => res.json())
@@ -30,7 +30,7 @@ const MyOrders = () => {
    }
 
    const handleDelete = (id) => {
-      fetch(`https://outdoors-on-bike.herokuapp.com/orders/${id}`, {
+      fetch(`https://mighty-retreat-45944.herokuapp.com/orders/${id}`, {
          method: 'DELETE'
       })
          .then(res => res.json())
@@ -49,7 +49,7 @@ const MyOrders = () => {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                <TableHead>
                   <TableRow>
-                     <TableCell>Bike Name</TableCell>
+                     <TableCell>Watch Name</TableCell>
                      <TableCell align="right">Image</TableCell>
                      <TableCell align="right">User</TableCell>
                      <TableCell align="right">Stutus</TableCell>

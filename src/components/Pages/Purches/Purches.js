@@ -17,7 +17,7 @@ const Purches = () => {
 
    useEffect(() => {
       if (cart.length !== 0) {
-         fetch(`https://outdoors-on-bike.herokuapp.com/bikes/${bikeId}`)
+         fetch(`https://mighty-retreat-45944.herokuapp.com/products/${bikeId}`)
             .then(res => res.json())
             .then(data => {
                setBike(data);
@@ -30,7 +30,7 @@ const Purches = () => {
 
    const handelConfirm = () => {
       setLoad(true)
-      fetch('https://outdoors-on-bike.herokuapp.com/orders', {
+      fetch('https://mighty-retreat-45944.herokuapp.com/orders', {
          method: "POST",
          headers: {
             "content-type": "application/json"

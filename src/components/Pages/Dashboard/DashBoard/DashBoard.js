@@ -28,7 +28,7 @@ const DashBoard = () => {
 
 
    useEffect(() => {
-      fetch(`https://outdoors-on-bike.herokuapp.com/users/${user?.email}`)
+      fetch(`https://mighty-retreat-45944.herokuapp.com/users/${user?.email}`)
          .then(res => res.json())
          .then(data => {
             setProfile(data)
@@ -49,7 +49,9 @@ const DashBoard = () => {
                   <ListItemText>Home</ListItemText>
                </ListItem>
             </Link>
-            <Link to={`${url}/pay`} className='text-decoration-none text-dark'>
+            {
+               !profile?.admin && <div>
+                  <Link to={`${url}/pay`} className='text-decoration-none text-dark'>
                <ListItem button >
                   <ListItemText>Pay</ListItemText>
                </ListItem>
@@ -64,6 +66,8 @@ const DashBoard = () => {
                   <ListItemText>Review</ListItemText>
                </ListItem>
             </Link>
+               </div>
+            }
 
             {
                profile?.role === "admin" && <div>

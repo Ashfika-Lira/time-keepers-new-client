@@ -18,7 +18,7 @@ const AddProdutc = () => {
 
    const handleSubmit = e => {
       e.preventDefault();
-      fetch('https://outdoors-on-bike.herokuapp.com/bikes', {
+      fetch('https://mighty-retreat-45944.herokuapp.com/products', {
          method: 'POST',
          headers: {
             "content-type": "application/json"
@@ -86,7 +86,7 @@ const AddProdutc = () => {
                               severity="success"
                            >
                               <AlertTitle>Success</AlertTitle>
-                              This Bike is Successfully <strong>Added!</strong>
+                              This Watch is Successfully <strong>Added!</strong>
                            </Alert>
                         }
                      </Grid>

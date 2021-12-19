@@ -23,7 +23,7 @@ const Register = () => {
       if (registerData.password === registerData.password2) {
          registerWithEmailPass(registerData?.email, registerData?.password);
          const newUser = { email: registerData.email, name: registerData.name, img: 'https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-line-black-icon-png-image_691051.jpg' }
-         fetch('https://outdoors-on-bike.herokuapp.com/users', {
+         fetch('https://mighty-retreat-45944.herokuapp.com/users', {
             method: "PUT",
             headers: {
                "content-type": "application/json"
@@ -44,7 +44,7 @@ const Register = () => {
          .then(result => {
             const newUser = result.user;
             const newData = { email: newUser.email, name: newUser.displayName, img: newUser.photoURL }
-            fetch('https://outdoors-on-bike.herokuapp.com/users', {
+            fetch('https://mighty-retreat-45944.herokuapp.com/users', {
                method: "PUT",
                headers: {
                   "content-type": "application/json"

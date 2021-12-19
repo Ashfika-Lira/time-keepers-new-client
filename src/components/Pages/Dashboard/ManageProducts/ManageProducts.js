@@ -7,7 +7,7 @@ const ManageProducts = () => {
    const [bikes, setBIkes] = useState([]);
    const [loading, setLoading] = useState(false);
    useEffect(() => {
-      fetch('https://outdoors-on-bike.herokuapp.com/bikes')
+      fetch('https://mighty-retreat-45944.herokuapp.com/products')
          .then(res => res.json())
          .then(data => setBIkes(data))
    }, [loading])
