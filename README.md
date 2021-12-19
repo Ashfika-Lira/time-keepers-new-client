@@ -1,6 +1,6 @@
-# Getting Started Outdoors On Bike
+# Getting Started Timekeepers
 
-This project is live on [Outdoors on Bike](https://motor-bike-site.web.app/home).
+This project is live on [Outdoors on Bike](https://time-keepers-new.web.app/home).
 
 ## Available Services for Normal users
 
@@ -8,7 +8,7 @@ In the project you can run:
 
 ### `purches`
 
-If you are logged in you can purched any bike
+If you are logged in you can purched any watch
 
 ### `My Orders`
 
@@ -34,5 +34,4 @@ An admin can make another user as admin
 
 ### `add a product`
 
-an admin can add a bike 
-
+an admin can add a watch
